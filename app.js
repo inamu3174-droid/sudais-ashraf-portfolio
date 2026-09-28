@@ -1,7 +1,7 @@
 /* Sudais Ashraf Portfolio — interactions */
 
 const WHATSAPP_URL = "https://wa.me/917889348341";
-const INSTAGRAM_URL = "https://www.instagram.com/sudais.ashraf/";
+const INSTAGRAM_URL = "https://www.instagram.com/_sudais.ashraf_/";
 
 // High-quality placeholders matching the cinematic / Kashmir mood
 const media = {
