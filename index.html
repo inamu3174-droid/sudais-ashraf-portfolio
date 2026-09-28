@@ -16,10 +16,9 @@
 </head>
 <body>
   <main class="site-shell" id="top">
-    <!-- Navigation -->
     <header class="site-nav" id="siteNav">
       <button class="wordmark" onclick="scrollToId('top')">
-        <span>SA</span>
+        <img src="logo.jpg" alt="Visuals by Sudais" class="wordmark-logo" />
         <span class="wordmark-name">Sudais Ashraf</span>
       </button>
       <nav class="nav-links">
@@ -40,7 +39,6 @@
       </div>
     </header>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
       <div class="mobile-menu-inner">
         <a href="#about" onclick="closeMenu()">About</a>
@@ -52,7 +50,6 @@
       </div>
     </div>
 
-    <!-- Hero -->
     <section class="hero section-pad">
       <div class="hero-copy">
         <p class="eyebrow">Photographer · Video Editor · Reel Maker</p>
@@ -83,7 +80,6 @@
       </div>
     </section>
 
-    <!-- About -->
     <section class="about-section section-pad" id="about">
       <div class="section-kicker"><span>01</span><span class="kicker-line"></span><span>About</span></div>
       <div class="about-layout">
@@ -112,7 +108,6 @@
       </div>
     </section>
 
-    <!-- Services -->
     <section class="services-section section-pad" id="services">
       <div class="section-kicker"><span>02</span><span class="kicker-line"></span><span>What I do</span></div>
       <div class="section-heading-row">
@@ -123,16 +118,11 @@
         <p class="section-aside">One visual language across the frame, the edit and the feed.</p>
       </div>
       <div class="services-layout">
-        <div class="service-list" id="serviceList">
-          <!-- filled by JS -->
-        </div>
-        <div class="service-detail-panel" id="serviceDetail">
-          <!-- filled by JS -->
-        </div>
+        <div class="service-list" id="serviceList"></div>
+        <div class="service-detail-panel" id="serviceDetail"></div>
       </div>
     </section>
 
-    <!-- Work -->
     <section class="work-section section-pad" id="work">
       <div class="section-kicker"><span>03</span><span class="kicker-line"></span><span>Selected work</span></div>
       <div class="section-heading-row work-heading">
@@ -148,12 +138,9 @@
           <button class="filter-btn" data-filter="EDITING">Editing</button>
         </div>
       </div>
-      <div class="work-grid" id="workGrid">
-        <!-- filled by JS -->
-      </div>
+      <div class="work-grid" id="workGrid"></div>
     </section>
 
-    <!-- Process -->
     <section class="process-section section-pad" id="process">
       <div class="section-kicker"><span>04</span><span class="kicker-line"></span><span>How it works</span></div>
       <div class="section-heading-row">
@@ -163,30 +150,13 @@
         </div>
       </div>
       <div class="process-grid">
-        <div class="process-card">
-          <span class="process-num">01</span>
-          <h3>Discover</h3>
-          <p>Understanding the idea, story and creative vision.</p>
-        </div>
-        <div class="process-card">
-          <span class="process-num">02</span>
-          <h3>Capture</h3>
-          <p>Finding and capturing the moments that matter.</p>
-        </div>
-        <div class="process-card">
-          <span class="process-num">03</span>
-          <h3>Create</h3>
-          <p>Editing, color grading and shaping the visual story.</p>
-        </div>
-        <div class="process-card">
-          <span class="process-num">04</span>
-          <h3>Deliver</h3>
-          <p>Delivering polished content ready to share and publish.</p>
-        </div>
+        <div class="process-card"><span class="process-num">01</span><h3>Discover</h3><p>Understanding the idea, story and creative vision.</p></div>
+        <div class="process-card"><span class="process-num">02</span><h3>Capture</h3><p>Finding and capturing the moments that matter.</p></div>
+        <div class="process-card"><span class="process-num">03</span><h3>Create</h3><p>Editing, color grading and shaping the visual story.</p></div>
+        <div class="process-card"><span class="process-num">04</span><h3>Deliver</h3><p>Delivering polished content ready to share and publish.</p></div>
       </div>
     </section>
 
-    <!-- Contact -->
     <section class="contact-section section-pad" id="contact">
       <div class="section-kicker"><span>05</span><span class="kicker-line"></span><span>Contact</span></div>
       <div class="contact-layout">
@@ -206,29 +176,19 @@
           </div>
         </div>
         <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required placeholder="Your name" />
-          </div>
-          <div class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required placeholder="you@example.com" />
-          </div>
-          <div class="field">
-            <label for="message">Project details</label>
-            <textarea id="message" name="message" rows="4" required placeholder="Tell me about the project, timeline, and any references..."></textarea>
-          </div>
+          <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" required placeholder="Your name" /></div>
+          <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="you@example.com" /></div>
+          <div class="field"><label for="message">Project details</label><textarea id="message" name="message" rows="4" required placeholder="Tell me about the project, timeline, and any references..."></textarea></div>
           <button type="submit" class="button" id="submitBtn">Send message</button>
           <p class="form-success" id="formSuccess" hidden>Message received. I'll get back to you soon.</p>
         </form>
       </div>
     </section>
 
-    <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-top">
         <button class="wordmark footer-wordmark" onclick="scrollToId('top')">
-          <span>SA</span>
+          <img src="logo.jpg" alt="Visuals by Sudais" class="wordmark-logo" />
           <span class="wordmark-name">Sudais Ashraf</span>
         </button>
         <p class="footer-role">Photographer <span>•</span> Video editor <span>•</span> Reel maker</p>
@@ -249,13 +209,11 @@
       </div>
     </footer>
 
-    <!-- Sticky WhatsApp -->
     <a class="sticky-whatsapp" href="https://wa.me/917889348341" target="_blank" rel="noreferrer" aria-label="Chat with Sudais on WhatsApp">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
       <span>WhatsApp Sudais</span>
     </a>
 
-    <!-- Project Modal -->
     <div class="project-modal" id="projectModal" hidden>
       <div class="modal-image-wrap">
         <img id="modalImg" src="" alt="" />
@@ -273,7 +231,6 @@
       </div>
     </div>
 
-    <!-- Showreel Modal -->
     <div class="project-modal showreel-modal" id="showreelModal" hidden>
       <div class="showreel-card">
         <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80" alt="Showreel placeholder" />
@@ -290,7 +247,6 @@
       </div>
     </div>
   </main>
-
   <script src="app.js"></script>
 </body>
 </html>
